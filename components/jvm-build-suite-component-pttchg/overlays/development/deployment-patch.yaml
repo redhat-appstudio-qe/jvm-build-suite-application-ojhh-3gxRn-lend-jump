@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-pttchg
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/jvm-build-imld-tenant/jvm-build-suite-application-ojhh/jvm-build-suite-component-pttchg@sha256:31fdd20ce20c7150bd245a7bac6e206c467c1a36f5ccb4a62fc59cfc225cba9b
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
